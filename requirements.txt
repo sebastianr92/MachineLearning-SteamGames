@@ -1,0 +1,9 @@
+fastapi
+numpy
+pandas
+uvicorn
+pyarrow
+fastparquet
+matplotlib
+seaborn
+scikit-learn
