@@ -4,7 +4,7 @@ Proyecto MLOps - SteamGames
 
 Sebastián Risi - 2023
 
-[Ingreso a la API](https://pi-mlops-steamgames-git.onrender.com).
+[Ingreso a la API](https://pi-mlops-steamgames-git.onrender.com/docs).
 
 ## Descripción del Proyecto
 
