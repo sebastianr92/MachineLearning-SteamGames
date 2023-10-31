@@ -30,9 +30,18 @@ En esta fase del proyecto, se llevaron a cabo las siguientes actividades utiliza
 2. Limpieza de los datos para eliminar información innecesaria y asegurar una comprensión adecuada.
 3. Conversión de los datos a formato Parquet para su uso posterior.
 
+### **Feature engineering**
+En esta fase del proyecto se realiza el análisis de sentimientos, utilizando la librería textBlob. La librería TextBlob es parte de una biblioteca de procesamiento de lenguje natural (NLP); la que toma un comentario de un user calcula la polaridad del sentimiento y luego la clasifica como negativa, neutral o positiva.
+
+Además de la utilización de esta metodología, se prepararon los datasets necesarios para el tratamiento de cada función específica Logrando la optimización y mejora de los tiempos, del funcionamiento del servicio de la nube para deployar la API y resolver las consultas.
+
 ### Análisis Exploratorio de Datos (EDA)
 
 Se llevó a cabo un análisis exploratorio de los tres conjuntos de datos después del proceso ETL. Esto permitió visualizar las variables categóricas y numéricas, identificando las que son esenciales para el modelo de recomendación final del Machine Learning.
+
+### Modelado (Desarrollo de Modelos de Machine Learning)
+
+Este proyecto se basó en el dataset `steam_games` y se desarrolló una función llamada recommend_games, que proporciona recomendaciones de juegos similares según el género utilizando una comparación de elementos. Esta función se ejecuta mediante el modelo de recomendación item-item.
 
 #### **Desarrollo de API**
 
@@ -41,13 +50,9 @@ Se creó una API utilizando el framework FastAPI, que ofrece las siguientes func
 * **userdata** : Proporciona información sobre el gasto de un usuario, su porcentaje de recomendaciones y la cantidad de elementos que consume.
 * **userforgenre**: Identifica al usuario que acumula más horas jugadas para el género dado y otorga una lista de la acumulación de horas jugadas por año de lanzamiento
 * **developer**: Ofrece detalles sobre el contenido desarrollado por una empresa y su porcentaje de contenido gratuito por año.
-* best_developer_year: Devuelve el top 3 de desarrolladores con juegos más recomendados por usuarios para el año dado
+* **best_developer_year**: Devuelve el top 3 de desarrolladores con juegos más recomendados por usuarios para el año dado
 * **sentiment_analysis** : Según el desarrollador, devuelve un diccionario con el nombre del desarrollador como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
 * **recomendacion_juego** : Recomienda 5 juegos similares a uno ingresado
-
-### Modelado (Desarrollo de Modelos de Machine Learning)
-
-Este proyecto se basó en el dataset `steam_games` y se desarrolló una función llamada recommend_games, que proporciona recomendaciones de juegos similares según el género utilizando una comparación de elementos. Esta función se ejecuta mediante el modelo de recomendación item-item.
 
 ### FastAPI
 
