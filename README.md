@@ -5,6 +5,7 @@ Proyecto MLOps - SteamGames
 Sebastián Risi - 2023
 
 [Ingreso a la API](https://pi-mlops-steamgames-git.onrender.com/docs).
+[Video](https://www.loom.com/share/3175d6f5cfc2436294a5ccad78d1afe9?sid=a749f591-ac77-493d-a75f-e6bf1b9cbf6f).
 
 ## Descripción del Proyecto
 
@@ -65,7 +66,7 @@ El despliegue de la API se realizó en la plataforma Render, que es una solució
 
 ## Video
 
-Puede ver una explicación y demostración detallada del funcionamiento de la API en el [video correspondiente]().
+Puede ver una explicación y demostración detallada del funcionamiento de la API en el siguiente [video](https://www.loom.com/share/3175d6f5cfc2436294a5ccad78d1afe9?sid=a749f591-ac77-493d-a75f-e6bf1b9cbf6f).
 
 ## Conclusiones
 
