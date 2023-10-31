@@ -69,39 +69,8 @@ async def incio ():
 
         """    
     return principal
-
-"""
-#Función #1: userdata
-@app.get( "/userdata/{user_id}", name = "userdata")
-async def userdata(user_id : str):
-  
     
-    Parametro: 
-        user_id(str) : ID del Usuario a consultar.
-    Retorna:
-        user (dict): Información de un usuario ,
-        -cantidad de dinero gastado (int): Dinero gastado por usuario
-        -Porcentaje de recomendación usuario (float): Reviews realizadas por el usuario con respecto a la cantidad de 
-        reviews poe usuario
-        -cantidad de items (int):cantidad de juegos consumidos por usuario 
-    
-    #Gasto por Usuario
-    gasto = df_funcion1[df_funcion1["user_id"]== user_id]["price"].sum()
-    
-    #Cantidad de recomendaciones del usuario ingresado
-    rec_user= recommend[recommend["user_id"]== user_id]["recommend"].sum()
-    #Cantidad de recomendaciones totales por usuario
-    total_recomendaciones= len(user_reviews["user_id"].unique())
-    porcentaje=(rec_user/total_recomendaciones)*100
-    
-    #Cantidad de juegos que utilizo el usuario 
-    count= df_funcion1[df_funcion1["user_id"]== user_id]["items_count"].iloc[0]
-    return{
-        "Cantidad de dinero gastado": float (gasto),
-        "Porcentaje de recomendación usuario": round(float(porcentaje), 3),
-        "Cantidad de items": int(count)
-    }
-"""
+#Función #1
 
 #Función #2: USerForGenre
 
