@@ -2,6 +2,8 @@
 
 Proyecto MLOps - SteamGames 
 
+Sebastián Risi - 2023
+
 ## Descripción del Proyecto
 
 Este proyecto simula el rol de un MLOps Engineer, que combina habilidades de Data Engineer y Data Scientist, en el contexto de la plataforma de juegos Steam. El desafío de negocio consiste en crear un Producto Mínimo Viable (MVP) que incluya una API desplegada y un modelo de Machine Learning. Este producto debe poder realizar algunas consultas útiles sobre la plataforma de Steam. Por otro lado, implemente un sistema de recomendación basado en la similitud de los juegos.
