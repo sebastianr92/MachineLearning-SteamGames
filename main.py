@@ -18,7 +18,7 @@ app = FastAPI()
 
 #Dataset a utilizar
 
-df_funcion1 = pd.read_parquet("Data/df_funcion1.parquet")
+#df_funcion1 = pd.read_parquet("Data/df_funcion1.parquet")
 
 recommend = pd.read_parquet("Data/recommend.parquet")
 user_reviews = pd.read_parquet("Data/reviews.parquet")
@@ -70,7 +70,7 @@ async def incio ():
         """    
     return principal
 
-
+"""
 #Función #1: userdata
 @app.get( "/userdata/{user_id}", name = "userdata")
 async def userdata(user_id : str):
@@ -101,7 +101,7 @@ async def userdata(user_id : str):
         "Porcentaje de recomendación usuario": round(float(porcentaje), 3),
         "Cantidad de items": int(count)
     }
-    
+"""
 
 #Función #2: USerForGenre
 
