@@ -75,7 +75,7 @@ async def incio ():
 @app.get( "/userdata/{user_id}", name = "userdata")
 async def userdata(user_id : str):
   
-    """
+    
     Parametro: 
         user_id(str) : ID del Usuario a consultar.
     Retorna:
@@ -84,7 +84,7 @@ async def userdata(user_id : str):
         -Porcentaje de recomendación usuario (float): Reviews realizadas por el usuario con respecto a la cantidad de 
         reviews poe usuario
         -cantidad de items (int):cantidad de juegos consumidos por usuario 
-    """
+    
     #Gasto por Usuario
     gasto = df_funcion1[df_funcion1["user_id"]== user_id]["price"].sum()
     
