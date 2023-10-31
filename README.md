@@ -67,4 +67,4 @@ Puede ver una explicación y demostración detallada del funcionamiento de la AP
 
 ## Conclusiones
 
-Este proyecto se llevó a cabo utilizando los conocimientos adquiridos durante el programa de Data Science en Henry. Las tareas realizadas reflejan las responsabilidades típicas de un Data Engineer y un Data Scientist. El objetivo de un Producto Mínimo Viable (MVP) se logró con éxito, incluyendo una API y su despliegue en un servicio web.
+Este proyecto se llevó a cabo utilizando los conocimientos adquiridos durante el programa de Data Science en Henry. Las tareas realizadas reflejan las responsabilidades típicas de un Data Engineer y un Data Scientist. El objetivo de un Producto Mínimo Viable (MVP) se logró con éxito, incluyendo una API y su despliegue en un servicio web. El modelo de recomendación puede ser mejorado y complejizado agregando varaibles como las tags o el precio de los productos. 
