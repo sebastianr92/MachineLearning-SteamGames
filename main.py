@@ -18,7 +18,8 @@ app = FastAPI()
 
 #Dataset a utilizar
 
-#df_funcion1 = pd.read_parquet("Data/df_funcion1.parquet")
+gasto_por_usuario= pd.read_parquet("Data/df_gasto_por_usuario.parquet")
+item_por_usuario = pd.read_parquet("Data/df_item_por_usuario.parquet")
 
 recommend = pd.read_parquet("Data/recommend.parquet")
 user_reviews = pd.read_parquet("Data/reviews.parquet")
@@ -31,7 +32,6 @@ df_funcion4 = pd.read_parquet("Data/df_funcion4.parquet")
 df_funcion5 = pd.read_parquet("Data/df_funcion5.parquet")
 
 modelo_item = pd.read_parquet("Data/modelo_item.parquet")
-
 
 @app.get("/", response_class=HTMLResponse)
 async def incio ():
@@ -71,7 +71,36 @@ async def incio ():
     return principal
     
 #Función #1
-
+@app.get( "/userdata/{user_id}", name = "userdata")
+async def userdata(user_id : str):
+  
+    """
+    Parametro: 
+        user_id(str) : ID del Usuario a consultar.
+    Retorna:
+        user (dict): Información de un usuario ,
+        -cantidad de dinero gastado (int): Dinero gastado por usuario
+        -Porcentaje de recomendación usuario (float): Reviews realizadas por el usuario con respecto a la cantidad de 
+        reviews poe usuario
+        -cantidad de items (int):cantidad de juegos consumidos por usuario 
+    """
+        #Gasto por Usuario
+    gasto = gasto_por_usuario[gasto_por_usuario["user_id"] == user_id]["Gasto total"]
+    
+    #Cantidad de recomendaciones del usuario ingresado
+    rec_user= recommend[recommend["user_id"]== user_id]["recommend"].sum()
+    #Cantidad de recomendaciones totales por usuario
+    total_recomendaciones= len(user_reviews["user_id"].unique())
+    porcentaje=(rec_user/total_recomendaciones)*100
+    
+    #Cantidad de juegos que utilizo el usuario 
+    count= item_por_usuario[item_por_usuario["user_id"] == user_id]["items_count"]
+    return{
+        "Cantidad de dinero gastado": float(gasto.iloc[0]),
+        "Porcentaje de recomendación usuario": round(float(porcentaje), 3),
+        "Cantidad de items": int(count.iloc[0])
+    }
+    
 #Función #2: USerForGenre
 
 @app.get("/USerForGenre/{}/{genero}", name = "USerForGenre")
