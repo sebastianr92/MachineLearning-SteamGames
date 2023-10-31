@@ -41,7 +41,7 @@ Se llevó a cabo un análisis exploratorio de los tres conjuntos de datos despu�
 
 ### Modelado (Desarrollo de Modelos de Machine Learning)
 
-Este proyecto se basó en el dataset `steam_games` y se desarrolló una función llamada recommend_games, que proporciona recomendaciones de juegos similares según el género utilizando una comparación de elementos. Esta función se ejecuta mediante el modelo de recomendación item-item.
+Este proyecto se basó en el dataset `steam_games` y se desarrolló una función llamada recommend_games, que proporciona recomendaciones de juegos similares según el género utilizando una comparación de elementos. Esta función se ejecuta mediante el modelo de recomendación item-item. Se aplicó la *similitud del coseno*, una técnica comúnmente empleada para comparar la similitud entre documentos, palabras o cualquier cosa que pueda ser representada como vectores en un espacio multidimensional.
 
 #### **Desarrollo de API**
 
@@ -52,7 +52,7 @@ Se creó una API utilizando el framework FastAPI, que ofrece las siguientes func
 * **developer**: Ofrece detalles sobre el contenido desarrollado por una empresa y su porcentaje de contenido gratuito por año.
 * **best_developer_year**: Devuelve el top 3 de desarrolladores con juegos más recomendados por usuarios para el año dado
 * **sentiment_analysis** : Según el desarrollador, devuelve un diccionario con el nombre del desarrollador como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
-* **recomendacion_juego** : Recomienda 5 juegos similares a uno ingresado
+* **recommend_games** : Recomienda 5 juegos similares a uno ingresado
 
 ### FastAPI
 
