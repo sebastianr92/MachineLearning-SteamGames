@@ -5,7 +5,7 @@ FUNCIONES PARA ALIMENTAR LA API
 #librerías
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-#import pyarrow as pa
+import pyarrow as pa
 import pandas as pd
 import numpy as np
 #import scipy as sp
