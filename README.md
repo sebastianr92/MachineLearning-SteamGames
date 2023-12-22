@@ -8,11 +8,11 @@ Proyecto MLOps - SteamGames
 
 🎥 [Video Explicativo](https://www.loom.com/share/094ab96bbf8643b5986d67678e267d44?sid=2e93f1b1-2ee7-4027-87ba-2f9280c1095a).
 
-## Descripción del Proyecto
+## 📝 Descripción del Proyecto
 
 Este proyecto simula el rol de un MLOps Engineer, que combina habilidades de Data Engineer y Data Scientist, en el contexto de la plataforma de juegos Steam. El desafío de negocio consiste en crear un Producto Mínimo Viable (MVP) que incluya una API desplegada y un modelo de Machine Learning. Este producto debe poder realizar algunas consultas útiles sobre la plataforma de Steam. Por otro lado, implemente un sistema de recomendación basado en la similitud de los juegos.
 
-## Datos
+## 📊 Datos
 
 El desarrollo del proyecto se basa en tres archivos JSON comprimidos (GZIP):
 
@@ -20,7 +20,7 @@ El desarrollo del proyecto se basa en tres archivos JSON comprimidos (GZIP):
 * **australian_users_items.json**: Proporciona información sobre cómo los usuarios interactúan con los juegos, incluido el tiempo que pasan jugando.
 * **australian_users_reviews.json**: Contiene los comentarios y reseñas que los usuarios hacen sobre los juegos, junto con recomendaciones y otros datos como URLs y IDs de usuario.
 
-## Tareas Realizadas
+## 🛠️ Tareas Realizadas
 
 ### ETL (Extracción, Transformación y Carga)
 
@@ -71,10 +71,10 @@ El código para la generación de la API se encuentra en el archivo `Main`. Para
 
 El despliegue de la API se realizó en la plataforma Render, que es una solución en la nube para crear y ejecutar aplicaciones web. Se generó un servicio en Render conectado a este repositorio y se puede acceder a la API en el siguiente enlace: [Link de la API](https://pi-mlops-steamgames-git.onrender.com).
 
-## Video
+## 🎬 Video
 
 Puede ver una explicación y demostración detallada del funcionamiento de la API en el siguiente [video](https://www.loom.com/share/094ab96bbf8643b5986d67678e267d44?sid=2e93f1b1-2ee7-4027-87ba-2f9280c1095a).
 
-## Conclusiones
+## 🌟 Conclusiones
 
-Este proyecto se llevó a cabo utilizando los conocimientos adquiridos durante el programa de Data Science en Henry. Las tareas realizadas reflejan las responsabilidades típicas de un Data Engineer y un Data Scientist. El objetivo de un Producto Mínimo Viable (MVP) se logró con éxito, incluyendo una API y su despliegue en un servicio web. El modelo de recomendación puede ser mejorado y complejizado agreg
+Este proyecto se llevó a cabo utilizando los conocimientos adquiridos durante el programa de Data Science en Henry. Las tareas realizadas reflejan las responsabilidades típicas de un Data Engineer y un Data Scientist. El objetivo de un Producto Mínimo Viable (MVP) se logró con éxito, incluyendo una API y su despliegue en un servicio web. El modelo de recomendación puede ser mejorado y complejizado agreg...
