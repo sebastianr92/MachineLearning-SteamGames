@@ -1,4 +1,4 @@
-# 🎮 Modelo de Recomendación de Juegos en Steam
+# 🎮 Machine Learning - Modelo de Recomendación de Juegos en Steam
 
 Proyecto MLOps - SteamGames
 
